@@ -7,4 +7,3 @@ this will be used to update more information about this personal website, will b
  later
 update
 layrt
- poop
