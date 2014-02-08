@@ -1,170 +1,261 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 5.01//EN">
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=windows-1252">
-  <title>Phuoc (Peter) Nguyen</title>
-</script><script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<link href="css.css" rel="stylesheet" type="text/css">
+<!DOCTYPE html>
+<html lang="en">
+<!--  Skeleton Source from startbootrap 
+         		   Original				Currently Used 
+      Boostrap:     3.0.2					3.1.0
+      JQuery:       1.10.2                  1.11.0
+      Currently used: 3.1.0               
+-->
 
-<style type="text/css">
-  
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #fff;
-}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-h3 {
-  font-size: 2em;
-  margin: 0;
-}
+    <title>Phuoc (Peter) Nguyen</title>
 
- 
-a:link {color:#7F8C8D; text-decoration:none;}      /* unvisited link */
-a:visited {color:#7F8C8D;}  /* visited link */
-a:hover {color:#fdb324;}  /* mouse over link */
-a:active {color:#34495e;}  /* selected link */
-
-#backgroundimage {
-    /* Set the width dynamically depending on the width of the browser window */
-    width:100%;
-    height:100%;
-	position:absolute;
-	z-index:0;
-	color: #34495e;
-}
-
-#background {
-    width: 100%; 
-    height: 100%; 
-    position: absolute; 
-    left: 0px; 
-    top: 500px; 
-    z-index: 0;
-}
-
-.stretch {
-    width:100%;
-    height:100%;
-}
-
-#maintitle {
-    color:#34495e	;
-	font-size:100px; 
-	font-weight: 600;
-	letter-spacing: -1px;
-	text-align:center;
-	text-rendering: optimizelegibility;
-	z-index:1;
-}
-
-#subtitle {
-    color:#34495e;
-	font-size:60px; 
-	font-weight:300;
-	letter-spacing: -1px;
-	text-align:center;
-	text-rendering: optimizelegibility;
-	z-index:1;
-}
-
-#download .button {
-  -webkit-transform: translateZ(0);
-  width: 600px;
-  height: 60px;
-  margin: 50px;
-  margin-top: 0;
-  -moz-background-size: 128px;
-    -o-background-size: 128px;
-       background-size: 128px;
-  display: inline-block;
-  vertical-align: bottom;
-  background-repeat: no-repeat;
-  padding-top: 135px;
-  background-position: center top;
-  cursor: pointer;
-  color: #fff;
-  -webkit-transition: top 250ms, opacity 250ms;
-     -moz-transition: top 250ms, opacity 250ms;
-       -o-transition: top 250ms, opacity 250ms;
-          transition: top 250ms, opacity 250ms;
-}
-
-#download a:hover .button {
-  opacity: .33;
-  color: #fff;
-}
-
-button {
-  border: none;
-  font-size: 20px;
-  font-weight: 200;
-  color: #ffffff;
-  padding: 12px 20px 12px 20px;
-  line-height: 22px;
-  text-decoration: none;
-  text-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
-  font-family: "Open Sans", "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-}
-
-button:hover {
-  background: #34495E;
-}
-
-button:active {
-  background: #95A5A6;
-}
-
-.center {
-		margin-left:auto;
-		margin-right: auto;
-}
-
-.container{
-	top: 20%;
-	left: 50%;
-	height: 155.25pt;
-	margin-top: -100pt;
-	width: 700pt;
-	margin-left: -350pt;
-	position: absolute;
-	vertical-align: middle;
-	line-height: 100px;
-	text-align: center;
-}
-
- </style>
+    <!-- 
+     * Bootstrap v3.1.0 (http://getbootstrap.com)
+     * Copyright 2011-2014 Twitter, Inc.
+     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+     -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- Main content -->
-<div class="container">
-	<h3>
-	  <div id="maintitle">
-	Hello, i'm Nguyen.</div></h3>
-	<div id="subtitle">
-	I <a href="http://www.nguyenphuoc.net/design/">design</a>, <a href="http://www.github.com/nguyenph88/">code</a>, <a href="http://www.nguyenphuoc.net/blog/">blog</a>, and <a href="http://my.opera.com/photoshop4life/blog/">photoshop.</a></div>
-</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p align="center"><img src="plugandplay.png" width="920" height="509" usemap="#logos"></p>
+    <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand"><a href="http://startbootstrap.com">Start Bootstrap</a>
+            </li>
+            <li><a href="#top">Home</a>
+            </li>
+            <li><a href="#about">About</a>
+            </li>
+            <li><a href="#services">Services</a>
+            </li>
+            <li><a href="#portfolio">Portfolio</a>
+            </li>
+            <li><a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /Side Menu -->
 
-<map name="logos">
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="header">
+        <div class="vert-text">
+            <h1>Hi, I'm Phuoc Nguyen</h1>
+            <h3>
+                <em>Quote of the day:</em>The best thing about a boolean is even if you are wrong, you are only off by a bit.</h3>
+            <a href="#about" class="btn btn-default btn-lg">Check Me Out</a>
+        </div>
+    </div>
+    <!-- /Full Page Image Header Area -->
 
-  <area shape="rect" coords="11,98,127,206" href="http://www.twitter.com/npploveyou/" title="Twitter" alt="Twitter" />
-  <area shape="rect" coords="135,9,248,130" href="#" title="#" alt="#" />
-  <area shape="rect" coords="308,44,416,150" href="http://www.linkedin.com/in/nguyenphuoc/" title="linkedin" alt="Linkedin" />
-  <area shape="rect" coords="450,185,530,260" href="http://www.facebook.com/npploveyou/" title="Facebook" alt="Facebook" />
-  <area shape="rect" coords="565,11,660,114" href="http://www.google.com/plus/" title="Google Plus" alt="Google Plus" />
-</map>
-</body></html>
+    <!-- Intro -->
+    <div id="about" class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h2>Subtle Sidebar is the Perfect Template for your Next Portfolio Website Project!</h2>
+                    <p class="lead">This template really has it all. It's up to you to customize it to your liking! It features some fresh photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Intro -->
+
+    <!-- Services -->
+    <div id="services" class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h2>Our Services</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-2 text-center">
+                    <div class="service-item">
+                        <i class="service-icon fa fa-rocket"></i>
+                        <h4>Spacecraft Repair</h4>
+                        <p>Did your navigation system shut down in the middle of that asteroid field? We can repair any dings and scrapes to your spacecraft!</p>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="service-item">
+                        <i class="service-icon fa fa-magnet"></i>
+                        <h4>Problem Solving</h4>
+                        <p>Need to know how magnets work? Our problem solving solutions team can help you identify problems and conduct exploratory research.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="service-item">
+                        <i class="service-icon fa fa-shield"></i>
+                        <h4>Blacksmithing</h4>
+                        <p>Planning a time travel trip to the middle ages? Preserve the space time continuum by blending in with period accurate armor and weapons.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="service-item">
+                        <i class="service-icon fa fa-pencil"></i>
+                        <h4>Pencil Sharpening</h4>
+                        <p>We've been voted the best pencil sharpening service for 10 consecutive years. If you have a pencil that feels dull, we'll get it sharp!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Services -->
+
+    <!-- Callout -->
+    <div class="callout">
+        <div class="vert-text">
+            <h1>A Dramatic Text Area</h1>
+        </div>
+    </div>
+    <!-- /Callout -->
+
+    <!-- Portfolio -->
+    <div id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h2>Our Work</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2 text-center">
+                    <div class="portfolio-item">
+                        <a href="#">
+                            <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                        </a>
+                        <h4>Cityscape</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="portfolio-item">
+                        <a href="#">
+                            <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                        </a>
+                        <h4>Is That On Fire?</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2 text-center">
+                    <div class="portfolio-item">
+                        <a href="#">
+                            <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                        </a>
+                        <h4>Stop Sign</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="portfolio-item">
+                        <a href="#">
+                            <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                        </a>
+                        <h4>Narrow Focus</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Portfolio -->
+
+    <!-- Call to Action -->
+    <div class="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h3>The buttons below are impossible to resist.</h3>
+                    <a href="#" class="btn btn-lg btn-default">Click Me!</a>
+                    <a href="#" class="btn btn-lg btn-primary">Look at Me!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Call to Action -->
+
+    <!-- Map -->
+    <div id="contact" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <br />
+        <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        </small>
+        </iframe>
+    </div>
+    <!-- /Map -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <ul class="list-inline">
+                        <li><i class="fa fa-facebook fa-3x"></i>
+                        </li>
+                        <li><i class="fa fa-twitter fa-3x"></i>
+                        </li>
+                        <li><i class="fa fa-dribbble fa-3x"></i>
+                        </li>
+                    </ul>
+                    <div class="top-scroll">
+                        <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
+                    </div>
+                    <hr>
+                    <p>Copyright &copy; Company 2013</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+    <script>
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>
